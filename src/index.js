@@ -120,19 +120,20 @@ module.exports = {
         // For the full list of capabilities, see https://www.browserstack.com/automate/capabilities
 
         return {
-            'build':                       process.env['BROWSERSTACK_BUILD_ID'],
-            'project':                     process.env['BROWSERSTACK_PROJECT_NAME'],
-            'resolution':                  process.env['BROWSERSTACK_DISPLAY_RESOLUTION'],
-            'name':                        process.env['BROWSERSTACK_TEST_RUN_NAME'],
-            'browserstack.debug':          process.env['BROWSERSTACK_DEBUG'],
-            'browserstack.console':        process.env['BROWSERSTACK_CONSOLE'],
-            'browserstack.networkLogs':    process.env['BROWSERSTACK_NETWORK_LOGS'],
-            'browserstack.video':          process.env['BROWSERSTACK_VIDEO'],
-            'browserstack.timezone':       process.env['BROWSERSTACK_TIMEZONE'],
-            'browserstack.geoLocation':    process.env['BROWSERSTACK_GEO_LOCATION'],
-            'browserstack.customNetwork':  process.env['BROWSERSTACK_CUSTOM_NETWORK'],
-            'browserstack.networkProfile': process.env['BROWSERSTACK_NETWORK_PROFILE'],
-            'acceptSslCerts':              process.env['BROWSERSTACK_ACCEPT_SSL_CERTS']
+            'build':                                 process.env['BROWSERSTACK_BUILD_ID'],
+            'project':                               process.env['BROWSERSTACK_PROJECT_NAME'],
+            'resolution':                            process.env['BROWSERSTACK_DISPLAY_RESOLUTION'],
+            'name':                                  process.env['BROWSERSTACK_TEST_RUN_NAME'],
+            'browserstack.debug':                    process.env['BROWSERSTACK_DEBUG'],
+            'browserstack.console':                  process.env['BROWSERSTACK_CONSOLE'],
+            'browserstack.networkLogs':              process.env['BROWSERSTACK_NETWORK_LOGS'],
+            'browserstack.video':                    process.env['BROWSERSTACK_VIDEO'],
+            'browserstack.timezone':                 process.env['BROWSERSTACK_TIMEZONE'],
+            'browserstack.geoLocation':              process.env['BROWSERSTACK_GEO_LOCATION'],
+            'browserstack.customNetwork':            process.env['BROWSERSTACK_CUSTOM_NETWORK'],
+            'browserstack.networkProfile':           process.env['BROWSERSTACK_NETWORK_PROFILE'],
+            'browserstack.preventCrossSiteTracking': process.env['BROWSERSTACK_PREVENT_CROSS_SITE_TRACKING'],
+            'acceptSslCerts':                        process.env['BROWSERSTACK_ACCEPT_SSL_CERTS']
         };
     },
 
